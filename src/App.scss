@@ -1,0 +1,71 @@
+@import "styles/reset.scss";
+@import "styles/spacing.scss";
+@import "styles/fonts.scss";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Roboto:wght@300&display=swap");
+
+* {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.container {
+  margin: 2em 0;
+  padding: 0 0.5em;
+}
+
+.line {
+  border-top: 1px solid lightgrey;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-xsmall {
+  font-size: 0.8em;
+}
+.text-small {
+  font-size: 1em;
+}
+.text-medium {
+  font-size: 1.5em;
+}
+.text-large {
+  font-size: 1.8em;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+@for $i from 1 to 4 {
+  .w-#{$i * 25} {
+    width: $i * 25%;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}

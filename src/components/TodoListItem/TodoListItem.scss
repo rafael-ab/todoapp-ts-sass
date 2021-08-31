@@ -1,0 +1,97 @@
+.todo {
+  &-item-wrapper {
+    background-color: rgb(245, 245, 245);
+    border-radius: 0.3em;
+    padding: 1em 1em;
+    margin-bottom: 1em;
+    -webkit-box-shadow: 0px 3px 5px 1px #ccc;
+    box-shadow: 0px 3px 5px 1px #ccc;
+
+    &:hover {
+      -webkit-box-shadow: 0px 3px 6px 2px #ccc;
+      box-shadow: 0px 3px 6px 2px #ccc;
+      cursor: pointer;
+    }
+  }
+
+  &-edit {
+    &-form {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    &-input {
+      width: 100%;
+      padding: 10px 20px;
+      box-sizing: border-box;
+      background-color: rgb(245, 245, 245);
+      outline: none;
+      border: none;
+    }
+    &-btn {
+      border: none;
+      background-color: rgb(245, 245, 245);
+      &:hover {
+        cursor: pointer;
+        background-color: #ddd;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.todo-item {
+  display: block;
+  position: relative;
+  padding-left: 2em;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  .todo-input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .todo-check {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 1.2em;
+    width: 1.2em;
+    background-color: #ccc;
+    border-radius: 0.1em;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+  }
+
+  .todo-input:checked ~ .todo-check {
+    background-color: #2196f3;
+  }
+
+  .todo-input:checked ~ .todo-check:after {
+    display: block;
+  }
+
+  .todo-check:after {
+    left: 10px;
+    top: 6px;
+    width: 7px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}

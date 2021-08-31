@@ -1,0 +1,170 @@
+@import "./variables.scss";
+@import "./media.scss";
+
+@each $i, $spacer in $spacers {
+    .mx-#{$i} {
+        margin: 0 $spacer;
+    }
+    .my-#{$i} {
+        margin: $spacer 0;
+    }
+    .mt-#{$i} {
+        margin: $spacer 0 0 0;
+    }
+    .mr-#{$i} {
+        margin: 0 $spacer 0 0;
+    }
+    .mb-#{$i} {
+        margin: 0 0 $spacer 0;
+    }
+    .ml-#{$i} {
+        margin: 0 0 0 $spacer;
+    }
+
+    @include breakpoint-xs {
+        .mx-xs-#{$i} {
+            margin: 0 $spacer;
+        }
+        .my-xs-#{$i} {
+            margin: $spacer 0;
+        }
+        .mt-xs-#{$i} {
+            margin: $spacer 0 0 0;
+        }
+        .mr-xs-#{$i} {
+            margin: 0 $spacer 0 0;
+        }
+        .mb-xs-#{$i} {
+            margin: 0 0 $spacer 0;
+        }
+        .ml-xs-#{$i} {
+            margin: 0 0 0 $spacer;
+        }
+    }
+
+    @include breakpoint-sm {
+        .mx-sm-#{$i} {
+            margin: 0 $spacer;
+        }
+        .my-sm-#{$i} {
+            margin: $spacer 0;
+        }
+        .mt-sm-#{$i} {
+            margin: $spacer 0 0 0;
+        }
+        .mr-sm-#{$i} {
+            margin: 0 $spacer 0 0;
+        }
+        .mb-sm-#{$i} {
+            margin: 0 0 $spacer 0;
+        }
+        .ml-sm-#{$i} {
+            margin: 0 0 0 $spacer;
+        }
+    }
+
+    @include breakpoint-lg {
+        .mx-lg-#{$i} {
+            margin: 0 $spacer;
+        }
+        .my-lg-#{$i} {
+            margin: $spacer 0;
+        }
+        .mt-lg-#{$i} {
+            margin: $spacer 0 0 0;
+        }
+        .mr-lg-#{$i} {
+            margin: 0 $spacer 0 0;
+        }
+        .mb-lg-#{$i} {
+            margin: 0 0 $spacer 0;
+        }
+        .ml-lg-#{$i} {
+            margin: 0 0 0 $spacer;
+        }
+    }
+}
+
+@each $i, $spacer in $spacers {
+    .px-#{$i} {
+        padding: 0 $spacer;
+    }
+    .py-#{$i} {
+        padding: $spacer 0;
+    }
+    .pt-#{$i} {
+        padding: $spacer 0 0 0;
+    }
+    .pr-#{$i} {
+        padding: 0 $spacer 0 0;
+    }
+    .pb-#{$i} {
+        padding: 0 0 $spacer 0;
+    }
+    .pl-#{$i} {
+        padding: 0 0 0 $spacer;
+    }
+
+    @include breakpoint-xs {
+        .px-xs-#{$i} {
+            padding: 0 $spacer;
+        }
+        .py-xs-#{$i} {
+            padding: $spacer 0;
+        }
+        .pt-xs-#{$i} {
+            padding: $spacer 0 0 0;
+        }
+        .pr-xs-#{$i} {
+            padding: 0 $spacer 0 0;
+        }
+        .pb-xs-#{$i} {
+            padding: 0 0 $spacer 0;
+        }
+        .pl-xs-#{$i} {
+            padding: 0 0 0 $spacer;
+        }
+    }
+
+    @include breakpoint-sm {
+        .px-sm-#{$i} {
+            padding: 0 $spacer;
+        }
+        .py-sm-#{$i} {
+            padding: $spacer 0;
+        }
+        .pt-sm-#{$i} {
+            padding: $spacer 0 0 0;
+        }
+        .pr-sm-#{$i} {
+            padding: 0 $spacer 0 0;
+        }
+        .pb-sm-#{$i} {
+            padding: 0 0 $spacer 0;
+        }
+        .pl-sm-#{$i} {
+            padding: 0 0 0 $spacer;
+        }
+    }
+
+    @include breakpoint-lg {
+        .px-lg-#{$i} {
+            padding: 0 $spacer;
+        }
+        .py-lg-#{$i} {
+            padding: $spacer 0;
+        }
+        .pt-lg-#{$i} {
+            padding: $spacer 0 0 0;
+        }
+        .pr-lg-#{$i} {
+            padding: 0 $spacer 0 0;
+        }
+        .pb-lg-#{$i} {
+            padding: 0 0 $spacer 0;
+        }
+        .pl-lg-#{$i} {
+            padding: 0 0 0 $spacer;
+        }
+    }
+}

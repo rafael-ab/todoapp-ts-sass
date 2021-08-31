@@ -1,0 +1,26 @@
+@use "sass:map";
+@import "./variables.scss";
+
+@mixin breakpoint-xs {
+  @media (max-width: map-get($breakpoints, "xs")) {
+    @content;
+  }
+}
+
+@mixin breakpoint-sm {
+  @media (max-width: map-get($breakpoints, "sm")) {
+    @content;
+  }
+}
+
+@mixin breakpoint-md {
+  @media (max-width: map-get($breakpoints, "md")) {
+    @content;
+  }
+}
+
+@mixin breakpoint-lg {
+  @media (max-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
